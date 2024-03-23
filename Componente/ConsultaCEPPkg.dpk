@@ -1,0 +1,50 @@
+package ConsultaCEPPkg;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  RESTComponents,
+  xmlrtl;
+
+contains
+  uViaCEP in 'uViaCEP.pas',
+  uViaCEPFactory in '..\Classes\uViaCEPFactory.pas',
+  uIViaCEPSite in '..\Interface\uIViaCEPSite.pas',
+  uViaCEPSitePadrao in '..\Classes\uViaCEPSitePadrao.pas',
+  uViaCEPSiteJson in '..\Classes\uViaCEPSiteJson.pas',
+  uViaCEPSiteXml in '..\Classes\uViaCEPSiteXml.pas',
+  uIDadosPesquisa in '..\Interface\uIDadosPesquisa.pas',
+  uDadosPesquisa in '..\Classes\uDadosPesquisa.pas',
+  uIDadosResultado in '..\Interface\uIDadosResultado.pas',
+  uDadosResultado in '..\Classes\uDadosResultado.pas',
+  uEndereco in '..\Classes\uEndereco.pas',
+  uISerializavel in '..\Interface\uISerializavel.pas',
+  uEnum in '..\Classes\uEnum.pas';
+
+end.
