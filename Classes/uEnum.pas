@@ -1,5 +1,9 @@
 unit uEnum;
 
+{
+  Unit para centração das definições de enumeradores
+}
+
 interface
 
 type

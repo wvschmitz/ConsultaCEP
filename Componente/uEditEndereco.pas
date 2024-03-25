@@ -1,5 +1,13 @@
 unit uEditEndereco;
 
+{
+  Componente para validação de uma quantidade mínima de caracteres que é
+  atribuída pela propriedade MinLength, quando não atendida a quantidade mínima
+  de caracteres, irá apresentar a mensagem “A quantidade de caracteres informada
+  deve ser superior a X” e não será permitido sair do mesmo até que seja
+  informado corretamente.
+}
+
 interface
 
 uses

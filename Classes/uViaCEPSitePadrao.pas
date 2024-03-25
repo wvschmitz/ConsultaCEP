@@ -2,6 +2,12 @@ unit uViaCEPSitePadrao;
 
 interface
 
+{
+  Classe padrão de acesso a API da ViaCEP que disponibiliza um método que irá
+  efetuar a requisição e devolver o retorno da API utilizando o componente
+  THTTPClient nativo do Delphi.
+}
+
 uses
   System.SysUtils, uDadosPesquisa, uDadosResultado;
 
@@ -35,7 +41,7 @@ begin
       Result := oRespose.ContentAsString
     else
       begin
-        raise Exception.Create('Erro não tratado ' + oRespose.StatusText);
+        raise Exception.Create('Ocorreu um problema ao acessar a API da ViaCEP, Código de retorno ' + oRespose.StatusText);
       end;
   finally
     FreeAndNil(oHttp);

@@ -1,5 +1,14 @@
 unit uDadosResultado;
 
+{
+  Classe que irá conter os endereços retornados da API e se ocorreu um erro
+  durante a busca, ela implementa as interfaces IDadosResultado e a
+  ISerializavel.
+
+  Essa classe é serializada nas classes uViaCEPSiteJson e uViaCEPSiteXml onde
+  será usada na tela a partir do retorno do componente uViaCEP.
+}
+
 interface
 
 uses

@@ -1,5 +1,10 @@
 unit uViaCEPSiteJson;
 
+{
+  Classe com as regras da API de JSON da ViaCEP, onde irá herdar da classe
+  TViaCEPSitePadrao e implementar os métodos da interface IViaCEPSite.
+}
+
 interface
 
 uses

@@ -1,5 +1,10 @@
 unit uConsultaCEPController;
 
+{
+  Classe para centralização das regras do formulário de Consulta de CEP e também
+  responsável por chamar a classe uConsultaCEPModel para gravação de dados.
+}
+
 interface
 
 uses

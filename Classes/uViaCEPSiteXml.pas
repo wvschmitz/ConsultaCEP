@@ -1,5 +1,10 @@
 unit uViaCEPSiteXml;
 
+{
+  Classe com as regras da API de XML da ViaCEP, onde irá herdar da classe
+  TViaCEPSitePadrao e implementar os métodos da interface IViaCEPSite.
+}
+
 interface
 
 uses

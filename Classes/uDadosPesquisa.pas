@@ -1,5 +1,14 @@
 unit uDadosPesquisa;
 
+{
+  Classe que irá conter as informações solicitadas para pesquisa,ela implementa
+  as interfaces IDadosPesquisa e a ISerializavel.
+
+  Está classe é serializada na tela e enviada em formato JSON para o componente
+  uViaCEP, que nas classes uViaCEPSiteJson e uViaCEPSiteXml será feito a
+  deserialização para o objeto.
+}
+
 interface
 
 uses

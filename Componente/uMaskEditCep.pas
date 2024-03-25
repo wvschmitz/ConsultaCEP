@@ -1,4 +1,10 @@
-unit uMaskEditCep;
+﻿unit uMaskEditCep;
+
+{
+  Componente para validar a digitação de um CEP válido conforme a máscara
+  "11111-111" definida por padrão, obrigando a digitação do CEP com caracteres
+  numéricos e com a quantidade numérica correta.
+}
 
 interface
 
@@ -39,7 +45,7 @@ procedure TMaskEditCep.DoExit;
 begin
   if (Length(GetCepNumerico) < 8) and (GetCepNumerico <> '') then
     begin
-      ShowMessage('A quantidade de caracteres do CEP est� inv�lida.');
+      ShowMessage('A quantidade de caracteres do CEP est� inv�lida.');
       SetFocus;
       Exit;
     end;

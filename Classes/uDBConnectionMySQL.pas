@@ -1,5 +1,10 @@
 unit uDBConnectionMySQL;
 
+{
+  Classe que implementa a interface IDBConnection que é responsável por definir
+  um acesso ao Banco de Dados MySQL, utilizando o componente FireDAC do Delphi.
+}
+
 interface
 
 uses

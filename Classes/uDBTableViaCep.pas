@@ -1,5 +1,10 @@
 unit uDBTableViaCep;
 
+{
+  Classe que implementa a interface IDBTableViaCep que possui as regras de
+  inserção, atualização e consulta da tabela “viacep” do MySQL.
+}
+
 interface
 
 uses

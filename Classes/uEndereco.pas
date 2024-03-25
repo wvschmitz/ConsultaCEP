@@ -1,5 +1,10 @@
 unit uEndereco;
 
+{
+  Classe para representar um endereço, onde irá possuir as informações como CEP,
+  Logradouro, Complemento, Bairro, Cidade e UF.
+}
+
 interface
 
 type

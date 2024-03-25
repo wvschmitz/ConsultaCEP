@@ -1,5 +1,11 @@
 unit uEditEstados;
 
+{
+  Componente para validar a digitação dos estados brasileiros, obrigando que
+  seja informado um estado válido. O componente também é responsável por
+  retornar a sigla do estado digitado pelo usuário.
+}
+
 interface
 
 uses

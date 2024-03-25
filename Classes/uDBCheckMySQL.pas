@@ -1,5 +1,12 @@
 unit uDBCheckMySQL;
 
+{
+  Classe que implementa a interface IDBCheck que é responsável por validar se o
+  database “consultacep” e a tabela “viacep” estão criadas no banco de dados
+  disponibilizado, caso não estejam criados ela é responsável pela criação
+  dos mesmos
+}
+
 interface
 
 uses

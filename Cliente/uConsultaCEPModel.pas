@@ -1,5 +1,10 @@
 unit uConsultaCEPModel;
 
+{
+  Classe para centralizar as regras de acesso ao banco de dados e utilização
+  da classe uDBTableViaCep.
+}
+
 interface
 
 uses

@@ -1,5 +1,10 @@
 unit uViaCEP;
 
+{
+  Componente de acesso a API da ViaCEP, onde é definido pela propriedade
+  ModoPesquisa se será utilizado a consulta via JSON ou XML.
+}
+
 interface
 
 uses

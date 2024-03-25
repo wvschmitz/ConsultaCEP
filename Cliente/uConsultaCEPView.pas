@@ -1,5 +1,12 @@
 unit uConsultaCEPView;
 
+{
+  Formulário padrão do projeto ConsultaCEP para entrada das informações de
+  pesquisa e exibição dos endereços pesquisados. Esta tela possui duas páginas,
+  a primeira “Consultar” que fica responsável por exibir todos os CEPs já
+  pesquisados e a segunda é “Novo” responsável por pesquisar novos CEP.
+}
+
 interface
 
 uses
