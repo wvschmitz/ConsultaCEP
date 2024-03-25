@@ -3,7 +3,7 @@
         <ProjectGuid>{BFE084CD-4AA5-49B5-8BC2-3626B8F8D71C}</ProjectGuid>
         <MainSource>ConsultaCEPPkg.dpk</MainSource>
         <ProjectVersion>19.5</ProjectVersion>
-        <FrameworkType>None</FrameworkType>
+        <FrameworkType>VCL</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
@@ -49,7 +49,7 @@
         <DCC_K>false</DCC_K>
         <GenDll>true</GenDll>
         <GenPackage>true</GenPackage>
-        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
         <DCC_CBuilderOutput>All</DCC_CBuilderOutput>
         <SanitizedProjectName>ConsultaCEPPkg</SanitizedProjectName>
     </PropertyGroup>
@@ -59,10 +59,10 @@
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <DCC_UsePackage>rtl;$(DCC_UsePackage)</DCC_UsePackage>
+        <DCC_UsePackage>rtl;vcl;xmlrtl;RESTComponents;$(DCC_UsePackage)</DCC_UsePackage>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
-        <DCC_UsePackage>rtl;$(DCC_UsePackage)</DCC_UsePackage>
+        <DCC_UsePackage>rtl;vcl;xmlrtl;RESTComponents;$(DCC_UsePackage)</DCC_UsePackage>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
         <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
@@ -90,6 +90,7 @@
         <DCCReference Include="rtl.dcp"/>
         <DCCReference Include="RESTComponents.dcp"/>
         <DCCReference Include="xmlrtl.dcp"/>
+        <DCCReference Include="vcl.dcp"/>
         <DCCReference Include="uViaCEP.pas"/>
         <DCCReference Include="..\Classes\uViaCEPFactory.pas"/>
         <DCCReference Include="..\Interface\uIViaCEPSite.pas"/>
@@ -103,6 +104,9 @@
         <DCCReference Include="..\Classes\uEndereco.pas"/>
         <DCCReference Include="..\Interface\uISerializavel.pas"/>
         <DCCReference Include="..\Classes\uEnum.pas"/>
+        <DCCReference Include="uMaskEditCep.pas"/>
+        <DCCReference Include="uEditEndereco.pas"/>
+        <DCCReference Include="uEditEstados.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

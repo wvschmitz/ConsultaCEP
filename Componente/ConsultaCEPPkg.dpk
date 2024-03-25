@@ -30,7 +30,8 @@ package ConsultaCEPPkg;
 requires
   rtl,
   RESTComponents,
-  xmlrtl;
+  xmlrtl,
+  vcl;
 
 contains
   uViaCEP in 'uViaCEP.pas',
@@ -45,6 +46,9 @@ contains
   uDadosResultado in '..\Classes\uDadosResultado.pas',
   uEndereco in '..\Classes\uEndereco.pas',
   uISerializavel in '..\Interface\uISerializavel.pas',
-  uEnum in '..\Classes\uEnum.pas';
+  uEnum in '..\Classes\uEnum.pas',
+  uMaskEditCep in 'uMaskEditCep.pas',
+  uEditEndereco in 'uEditEndereco.pas',
+  uEditEstados in 'uEditEstados.pas';
 
 end.

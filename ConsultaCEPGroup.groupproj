@@ -3,10 +3,10 @@
         <ProjectGuid>{2E45BCE6-EFBF-4E40-85DC-A6E389938D00}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="Cliente\ConsultaCEP.dproj">
+        <Projects Include="Componente\ConsultaCEPPkg.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="Componente\ConsultaCEPPkg.dproj">
+        <Projects Include="Cliente\ConsultaCEP.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -17,15 +17,6 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
-    <Target Name="ConsultaCEP">
-        <MSBuild Projects="Cliente\ConsultaCEP.dproj"/>
-    </Target>
-    <Target Name="ConsultaCEP:Clean">
-        <MSBuild Projects="Cliente\ConsultaCEP.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="ConsultaCEP:Make">
-        <MSBuild Projects="Cliente\ConsultaCEP.dproj" Targets="Make"/>
-    </Target>
     <Target Name="ConsultaCEPPkg">
         <MSBuild Projects="Componente\ConsultaCEPPkg.dproj"/>
     </Target>
@@ -35,14 +26,23 @@
     <Target Name="ConsultaCEPPkg:Make">
         <MSBuild Projects="Componente\ConsultaCEPPkg.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ConsultaCEP">
+        <MSBuild Projects="Cliente\ConsultaCEP.dproj"/>
+    </Target>
+    <Target Name="ConsultaCEP:Clean">
+        <MSBuild Projects="Cliente\ConsultaCEP.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ConsultaCEP:Make">
+        <MSBuild Projects="Cliente\ConsultaCEP.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="ConsultaCEP;ConsultaCEPPkg"/>
+        <CallTarget Targets="ConsultaCEPPkg;ConsultaCEP"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="ConsultaCEP:Clean;ConsultaCEPPkg:Clean"/>
+        <CallTarget Targets="ConsultaCEPPkg:Clean;ConsultaCEP:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="ConsultaCEP:Make;ConsultaCEPPkg:Make"/>
+        <CallTarget Targets="ConsultaCEPPkg:Make;ConsultaCEP:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

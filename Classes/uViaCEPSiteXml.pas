@@ -66,7 +66,7 @@ begin
 
   oXml := LoadXMLData(cRetorno);
 
-  if oXml.DocumentElement.ChildNodes['erro'] <> nil then
+  if oXml.DocumentElement.ChildNodes.FindNode('erro') <> nil then
     begin
       FoDadosResultado.SetErro(True);
       FoDadosResultado.SetMensagem('CEP não localizado na API!');
